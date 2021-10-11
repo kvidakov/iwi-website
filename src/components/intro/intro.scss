@@ -1,0 +1,39 @@
+@import './../../scss/variables';
+
+.intro {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8em 0 16em;
+
+  &__title {
+    display: flex;
+    font-size: 80px;
+    margin: .2em 0 .35em 0;
+  }
+
+  &__registered-trademark {
+    display: flex;
+    font-size: 38px;
+    font-weight: 400;
+  }
+
+  &__subtitle {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0 0 1.5em 0;
+    
+    &--highlighted {
+      font-weight: 700;
+    }
+  }
+
+  &__button {
+    background: $primary-color 0% 0% no-repeat padding-box!important;
+    border-radius: 41px!important;
+    font: normal normal 600 24px/40px Montserrat!important;
+    text-transform: none!important;
+    width: 145px;
+  }
+}

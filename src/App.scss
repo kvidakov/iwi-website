@@ -1,5 +1,17 @@
+body {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: #fff!important;
+  font: normal normal bold 16px/14px Montserrat;
+  text-decoration: none!important;
+}
+
 .App {
   text-align: center;
+  position: relative;
 }
 
 .App-logo {
