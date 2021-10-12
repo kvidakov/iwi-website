@@ -1,13 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
-import { IntroComponent, NavigationComponent } from './components';
+import { MoreComponent, AboutComponent, IntroComponent, NavigationComponent } from './components';
 
 function App() {
   return (
     <div className="App">
       <NavigationComponent></NavigationComponent>
       <IntroComponent></IntroComponent>
+      <AboutComponent></AboutComponent>
+      <MoreComponent></MoreComponent>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

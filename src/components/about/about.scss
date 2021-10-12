@@ -1,0 +1,50 @@
+.about {
+  align-items: center;
+  background-color: #DB3E3E;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10em;
+  width: 100%;
+
+  &__title-img-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10em 0 14em 0;
+    position: relative;
+    width: 100%;
+  }
+
+  &__title {
+    font: normal normal 300 80px/54px Montserrat;
+    margin: 0 0 1.5em 0;
+    position: relative;
+    z-index: 5;
+
+    &--highlighted {
+      font-weight: 700;
+    }
+  }
+
+  &__img {
+    left: 50%;
+    position: absolute;
+    top: -65px;
+    transform: translateX(-50%);
+    width: 500px;
+  }
+
+  &__text {
+    font: normal normal 300 28px/38px Montserrat;
+    margin-bottom: 3em;
+    text-align: center;
+
+    &--highlighted {
+      font: normal normal 600 28px/38px Montserrat;
+    }
+  }
+
+  &__big-five-logo {
+    width: 273px;
+  }
+}

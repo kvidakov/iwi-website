@@ -1,0 +1,45 @@
+.more {
+  align-items: center;
+  background-color: #C14040;
+  display: flex;
+  flex-direction: column;
+  padding: 10em 0;
+
+  &__row {
+    display: flex;
+  }
+
+  &__col {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  &__title {
+    font: normal normal 300 80px/54px Montserrat;
+    text-align: left;
+    letter-spacing: -2px;
+    width: calc(100% + 2.4em);
+    
+    &--highlighted {
+      font: normal normal 600 80px/54px Montserrat;
+    }
+  }
+
+  &__title-and-text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  &__text {
+    font: normal normal 300 26px/36px Montserrat;
+    margin: 0;
+    
+    &--highlighted {
+      font: normal normal 600 26px/36px Montserrat;
+    }
+  }
+}
