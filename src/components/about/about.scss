@@ -1,10 +1,13 @@
 .about {
-  align-items: center;
   background-color: #DB3E3E;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   padding-bottom: 10em;
   width: 100%;
+
+  .col {
+    align-items: center;
+  }
 
   &__title-img-wrapper {
     height: 100%;
