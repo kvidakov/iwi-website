@@ -1,0 +1,35 @@
+.get-iwi {
+  background-color: #DB3E3E;
+  display: flex;
+  justify-content: center;
+
+  .col--justify-center {
+    justify-content: center;
+  }
+
+  &__title {
+    font: normal normal 300 60px/54px Montserrat;
+    white-space: nowrap;
+
+    &--highlighted {
+      font-weight: 600;
+    }
+  }
+  
+  &__text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font: normal normal 300 26px/36px Montserrat;
+    margin-bottom: 2.5em;
+
+    &--highlighted {
+      font-weight: 600;
+    }
+  }
+
+  &__app-store-images {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}

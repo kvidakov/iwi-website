@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
-import { MoreComponent, AboutComponent, IntroComponent, NavigationComponent } from './components';
+import { MoreComponent, AboutComponent, IntroComponent, NavigationComponent, GetIwiComponent } from './components';
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <IntroComponent></IntroComponent>
       <AboutComponent></AboutComponent>
       <MoreComponent></MoreComponent>
+      <GetIwiComponent></GetIwiComponent>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
