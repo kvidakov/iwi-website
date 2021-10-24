@@ -48,3 +48,27 @@ a {
     transform: rotate(360deg);
   }
 }
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.container {
+  max-width: 1080px;
+}
+
+.row {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+
+.col {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}

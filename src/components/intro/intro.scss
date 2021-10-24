@@ -1,11 +1,18 @@
 @import './../../scss/variables';
 
 .intro {
-  align-items: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   padding: 8em 0 16em;
+
+  .col {
+    align-items: center;
+  }
+
+  &__logo {
+    height: 96px;
+    width: 169px;
+  }
 
   &__title {
     display: flex;
