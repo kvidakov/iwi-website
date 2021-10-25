@@ -1,30 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
-import { MoreComponent, AboutComponent, IntroComponent, NavigationComponent, GetIwiComponent } from './components';
+import { MoreComponent, AboutComponent, IntroComponent, NavigationComponent, GetIwiComponent, FooterComponent } from './components';
 
 function App() {
   return (
     <div className="App">
-      <NavigationComponent></NavigationComponent>
+      {/* <NavigationComponent></NavigationComponent> */}
       <IntroComponent></IntroComponent>
       <AboutComponent></AboutComponent>
       <MoreComponent></MoreComponent>
       <GetIwiComponent></GetIwiComponent>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FooterComponent></FooterComponent>
     </div>
   );
 }

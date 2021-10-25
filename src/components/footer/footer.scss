@@ -1,0 +1,60 @@
+.footer {
+  background-color: #C14040;
+  display: flex;
+  justify-content: center;
+  min-height: 300px;
+  padding: 10em 0 3em 0;
+
+  &__logo {
+    height: 53px;
+    margin-right: 2em;
+    width: 93px;
+  }
+
+  &__title {
+    font: normal normal 300 40px/54px Montserrat;
+    margin: 0;
+
+    &--highlighted {
+      font-weight: 600;
+    }
+  }
+
+  &__social-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 4em;
+  }
+
+  &__social-icon {
+    margin-left: 3em;
+  }
+
+  &__social-icon-facebook {
+    height: 53px;
+    width: 53px;
+  }
+
+  &__social-icon-instagram {
+    height: 47px;
+    width: 47px;
+  }
+
+  &__social-icon-youtube {
+    height: 45px;
+    width: 64px;
+  }
+
+  &__bottom-row {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__bottom-link {
+    margin-right: 2em!important;
+  }
+
+  &___trademark {
+    margin: 0 0 0 auto;
+  }
+}
