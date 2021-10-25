@@ -7,7 +7,7 @@ export const GetIwiComponent = () => {
   return (
     <section className="get-iwi">
       <div className="container">
-        <div className="row get-iwi__row">
+        <div className="row">
           <div className="col">
             <img className="get-iwi__img" src={`${BASE_URL}/assets/images/get-iwi-mobile-app.png`} alt="get iwi application" />
           </div>
