@@ -24,7 +24,7 @@ export const FooterComponent = () => {
           </div>
         </div>
         <div className="row footer__bottom-row">
-          <Link className="footer__bottom-link" href="#" target="_blank" rel="noopener noreferrer">
+          {/* <Link className="footer__bottom-link" href="#" target="_blank" rel="noopener noreferrer">
             Contact
           </Link>
           <Link className="footer__bottom-link" href="#" target="_blank" rel="noopener noreferrer">
@@ -38,7 +38,7 @@ export const FooterComponent = () => {
           </Link>
           <Link className="footer__bottom-link" href="#" target="_blank" rel="noopener noreferrer">
             Privacy Settings
-          </Link>
+          </Link> */}
           <p className="footer___trademark">© 2021 iwi App, All Rights Reserved</p>
         </div>
       </div>
