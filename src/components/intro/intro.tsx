@@ -18,7 +18,7 @@ export const IntroComponent = () => {
             <img className="intro__logo" src={`${BASE_URL}/assets/images/iwi-logo-white.svg`} alt="iwi white logo" />
             <h1 className="intro__title">Join iwi<span className="intro__registered-trademark">&reg;</span></h1>
             <h2 className="intro__subtitle">The app that utilizes modern psychology<br/><span className="intro__subtitle--highlighted">to help you build relationships with people<br/>you will easily connect to.</span></h2>
-            <Button variant="contained" className="intro__button">Join</Button>
+            {/* <Button variant="contained" className="intro__button">Join</Button> */}
           </div>
         </div>
       </div>
