@@ -6,7 +6,7 @@ import { MoreComponent, AboutComponent, IntroComponent, NavigationComponent, Get
 function App() {
   return (
     <div className="App">
-      {/* <NavigationComponent></NavigationComponent> */}
+      <NavigationComponent></NavigationComponent>
       <IntroComponent></IntroComponent>
       <AboutComponent></AboutComponent>
       <MoreComponent></MoreComponent>

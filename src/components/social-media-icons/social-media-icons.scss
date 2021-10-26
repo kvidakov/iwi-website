@@ -1,0 +1,47 @@
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin-left: 4em;
+
+  &__icon {
+    margin-left: 3em;
+
+    img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+
+  &__icon-facebook {
+    height: 53px;
+    width: 53px;
+  }
+
+  &__icon-instagram {
+    height: 47px;
+    width: 47px;
+  }
+
+  &__icon-youtube {
+    height: 45px;
+    width: 64px;
+  }
+}
+
+.navigation {
+  .social-icons {
+    &__icon {
+      margin-left: 1em;
+    }
+
+    &__icon-facebook {
+      height: 37px;
+      width: 38px;
+    }
+
+    &__icon-instagram {
+      height: 37px;
+      width: 37px;
+    }
+  }
+}
