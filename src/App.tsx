@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
-import { MoreComponent, AboutComponent, IntroComponent, NavigationComponent, GetIwiComponent, FooterComponent } from './components';
+import { MoreComponent, AboutComponent, IntroComponent, NavigationComponent, GetIwiComponent, FooterComponent, NewsletterComponent } from './components';
 
 function App() {
   return (
@@ -10,7 +10,8 @@ function App() {
       <IntroComponent></IntroComponent>
       <AboutComponent></AboutComponent>
       <MoreComponent></MoreComponent>
-      <GetIwiComponent></GetIwiComponent>
+      <NewsletterComponent></NewsletterComponent>
+      {/* <GetIwiComponent></GetIwiComponent> */}
       <FooterComponent></FooterComponent>
     </div>
   );

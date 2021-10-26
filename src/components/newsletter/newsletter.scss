@@ -1,0 +1,75 @@
+.newsletter {
+  display: flex;
+  justify-content: center;
+  padding: 8em 0;
+
+  &__title {
+    font: normal normal 300 50px/54px Montserrat;
+    margin: 0 0 1.2em 0;
+    max-width: 700px;
+
+    &--highlighted {
+      font-weight: 600;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font: normal normal 300 26px/36px Montserrat;
+    margin-bottom: 2.5em;
+
+    &--highlighted {
+      font-weight: 600;
+    }
+  }
+
+  &__app-store-images {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__consent {
+    font: normal normal 300 16px/24px Montserrat;
+    margin: 0;
+    max-width: 500px;
+  }
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3em;
+
+  .MuiTextField-root {
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    color: #FFFFFF;
+    height: 56px;
+    margin-bottom: 1em;
+    width: 400px;
+  }
+
+  fieldset.MuiOutlinedInput-notchedOutline.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    border: none;
+  }
+
+  input#email {
+    color: #FFFFFF;
+    font: normal normal 600 17px/20px Montserrat;
+    text-align: center;
+  }
+
+  .MuiButton-root.newsletter-form__button {
+    background: #fff;
+    border-radius: 30px;
+    color: #DB3E3E;
+    font: normal normal 600 17px/20px Montserrat;
+    height: 58px;
+
+    &:disabled {
+      opacity: .6;
+    }
+  }
+}
