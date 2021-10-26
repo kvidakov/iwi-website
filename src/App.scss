@@ -57,6 +57,10 @@ a {
   align-items: flex-end;
 }
 
+.align-items-center {
+  align-items: center;
+}
+
 .container {
   max-width: 1080px;
   position: relative;
@@ -72,4 +76,8 @@ a {
   display: flex;
   flex: 1;
   flex-direction: column;
+}
+
+.col--justify-center {
+  justify-content: center;
 }
