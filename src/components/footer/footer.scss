@@ -6,9 +6,25 @@
   padding: 10em 0 3em 0;
 
   &__logo {
-    height: 53px;
     margin-right: 2em;
     width: 93px;
+
+    @media screen and (max-width: 900px) {
+      width: 73px;
+    }
+    
+    @media screen and (max-width: 768px) {
+      width: 63px;
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 50px;
+      margin-right: 1em;
+    }
+
+    @media screen and (max-width: 450px) {
+      width: 40px;
+    }
   }
 
   &__title {
@@ -17,6 +33,22 @@
 
     &--highlighted {
       font-weight: 600;
+    }
+
+    @media screen and (max-width: 900px) {
+      font-size: 32px;
+    }
+        
+    @media screen and (max-width: 768px) {
+      font-size: 28px;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 22px;
+    }
+
+    @media screen and (max-width: 450px) {
+      font-size: 20px;
     }
   }
 
@@ -30,6 +62,7 @@
   }
 
   &___trademark {
+    font-size: 14px;
     margin: 0 0 0 auto;
   }
 }

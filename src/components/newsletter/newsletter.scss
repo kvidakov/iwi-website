@@ -7,33 +7,46 @@
     font: normal normal 300 50px/54px Montserrat;
     margin: 0 0 1.2em 0;
     max-width: 700px;
+    text-align: center;
 
     &--highlighted {
       font-weight: 600;
     }
-  }
 
-  &__text {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    font: normal normal 300 26px/36px Montserrat;
-    margin-bottom: 2.5em;
-
-    &--highlighted {
-      font-weight: 600;
+    @media screen and (max-width: 900px) {
+      font-size: 40px;
+      text-align: center;
     }
-  }
 
-  &__app-store-images {
-    display: flex;
-    justify-content: space-evenly;
+    @media screen and (max-width: 600px) {
+      font-size: 32px;
+      line-height: 40px;
+    }
+    
+    @media screen and (max-width: 500px) {
+      font-size: 28px;
+      line-height: 36px;
+    }
+
+    @media screen and (max-width: 450px) {
+      font-size: 26px;
+    }
   }
 
   &__consent {
     font: normal normal 300 16px/24px Montserrat;
     margin: 0;
     max-width: 500px;
+    text-align: center;
+
+    @media screen and (max-width: 900px) {
+      text-align: center;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 }
 
@@ -49,16 +62,25 @@
     height: 56px;
     margin-bottom: 1em;
     width: 400px;
-  }
 
+    @media screen and (max-width: 600px) {
+      height: 46px;
+      width: 300px;
+    }
+  }
+  
   fieldset.MuiOutlinedInput-notchedOutline.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
     border: none;
   }
-
+  
   input#email {
     color: #FFFFFF;
     font: normal normal 600 17px/20px Montserrat;
     text-align: center;
+
+    @media screen and (max-width: 600px) {
+      padding: 10.5px 8px;
+    }
   }
 
   .MuiButton-root.newsletter-form__button {
@@ -71,5 +93,14 @@
     &:disabled {
       opacity: .6;
     }
+
+    @media screen and (max-width: 600px) {
+      height: 48px;
+      width: 300px;
+    }
+  }
+  
+  .Mui-focused .MuiOutlinedInput-notchedOutline {
+    border: none!important;
   }
 }

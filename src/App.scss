@@ -29,6 +29,7 @@ a {
 .row {
   display: flex;
   flex: 1;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -36,6 +37,14 @@ a {
   display: flex;
   flex: 1;
   flex-direction: column;
+
+  @media screen and (max-width: 991px) {
+    padding: 0 2em;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 0 1em;
+  }
 }
 
 .col--justify-center {
