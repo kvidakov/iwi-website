@@ -1,18 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import HomePage from './pages/home-page';
+import PrivacyPolicy from './pages/privacy-policy/privacy-policy';
+
 import './App.scss';
-import { MoreComponent, AboutComponent, IntroComponent, NavigationComponent, GetIwiComponent, FooterComponent, NewsletterComponent } from './components';
 
 function App() {
   return (
     <div className="App">
-      <NavigationComponent></NavigationComponent>
-      <IntroComponent></IntroComponent>
-      <AboutComponent></AboutComponent>
-      <MoreComponent></MoreComponent>
-      <NewsletterComponent></NewsletterComponent>
-      {/* <GetIwiComponent></GetIwiComponent> */}
-      <FooterComponent></FooterComponent>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

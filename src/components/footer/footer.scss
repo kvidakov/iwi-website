@@ -5,6 +5,22 @@
   min-height: 300px;
   padding: 10em 0 3em 0;
 
+  &--dark {
+    background-color: #31333F;
+    padding-top: 5em;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 500px) {
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 5em;
+    }
+  }
+
   &__logo {
     margin-right: 2em;
     width: 93px;
@@ -22,8 +38,9 @@
       margin-right: 1em;
     }
 
-    @media screen and (max-width: 450px) {
-      width: 40px;
+    @media screen and (max-width: 500px) {
+      margin: 0 0 1em 0;
+      width: 93px;
     }
   }
 
@@ -38,7 +55,7 @@
     @media screen and (max-width: 900px) {
       font-size: 32px;
     }
-        
+
     @media screen and (max-width: 768px) {
       font-size: 28px;
     }
@@ -57,12 +74,34 @@
     bottom: 0;
   }
 
+  &__links {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+
+    @media screen and (max-width: 768px) {
+      justify-content: center;
+      margin-bottom: 1.5em;
+    }
+  }
+
   &__bottom-link {
     margin-right: 2em!important;
+
+    @media screen and (max-width: 768px) {
+      margin-right: 0!important;
+    }
   }
 
   &___trademark {
     font-size: 14px;
     margin: 0 0 0 auto;
+
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+      margin: 0;
+      text-align: center;
+      width: 100%;
+    }
   }
 }

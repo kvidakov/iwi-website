@@ -1,0 +1,116 @@
+
+.privacy-policy {
+  background-color: #31333F;
+  display: flex;
+  justify-content: center;
+  padding: 8em 0;
+  
+  @media screen and (max-width: 768px) {
+    padding: 6em 0 4em 0;
+  }
+
+  .col {  
+    @media screen and (max-width: 1200px) {
+      padding: 0 2em;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 3em;
+    width: 169px;
+
+    @media screen and (max-width: 1024px) {
+      width: 140px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 124px;
+    }
+
+    @media screen and (max-width: 600px) {
+      margin-bottom: 2em;
+      width: 100px;
+    }
+
+    @media screen and (max-width: 500px) {
+      margin-left: auto;
+      margin-right: auto;
+      width: 90px;
+    }
+  }
+
+  &__title {
+    font: normal normal 300 60px/70px Montserrat;
+
+    &--highlighted {
+      font-weight: 600;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 44px;
+      line-height: 60px;
+    }
+
+    @media screen and (max-width: 500px) {
+      font-size: 32px;
+      line-height: 40px;
+      text-align: center;
+    }
+  }
+
+  &__hint {
+    font: normal normal normal 22px/32px Montserrat;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    @media screen and (max-width: 500px) {
+      text-align: center;
+    }
+  }
+
+  &__subtitle {
+    font: normal normal bold 28px/32px Montserrat;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  &__text, &__list-item {
+    font: normal normal normal 18px/24px Montserrat;
+    margin: 0 0 1em 0;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  &__back-to-homepage-wrapper {
+    display: flex;
+    margin-left: auto;
+    margin-top: 3em;
+
+    @media screen and (max-width: 500px) {
+      margin-right: auto;
+    }
+  }
+
+  &__back-to-homepage {
+    width: 150px;
+  }
+}
