@@ -1,3 +1,5 @@
+@import './../../scss/variables';
+
 .newsletter {
   display: flex;
   justify-content: center;
@@ -86,7 +88,7 @@
   .MuiButton-root.newsletter-form__button {
     background: #fff;
     border-radius: 30px;
-    color: #DB3E3E;
+    color: $primary-color;
     font: normal normal 600 17px/20px Montserrat;
     height: 58px;
 

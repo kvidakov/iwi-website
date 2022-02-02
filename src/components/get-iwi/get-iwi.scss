@@ -1,5 +1,7 @@
+@import './../../scss/variables';
+
 .get-iwi {
-  background-color: #DB3E3E;
+  background-color: $primary-color;
   display: flex;
   justify-content: center;
 
