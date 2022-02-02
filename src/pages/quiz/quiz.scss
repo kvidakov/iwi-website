@@ -7,8 +7,32 @@
   padding: 4em 0;
   width: 100%;
 
+  &__logo {
+    width: 169px;
+
+    @media screen and (max-width: 1024px) {
+      width: 140px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 124px;
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 100px;
+    }
+
+    @media screen and (max-width: 500px) {
+      width: 90px;
+    }
+  }
+
   &__title {
-    font: normal normal 300 80px/54px Montserrat;
+    align-items: center;
+    display: flex;
+    flex: 1;
+    font: normal normal 700 80px/84px Montserrat;
+    justify-content: space-evenly;
     margin: 0 0 1em 0;
     text-align: center;
 
@@ -75,6 +99,14 @@
     &:first-child {
       margin-right: 20px;
     }
+
+    @media screen and (max-width: 768px) {
+      width: 95px;
+    }
+
+    @media screen and (max-width: 500px) {
+      width: 70px;
+    }
   }
 
   &__question {
@@ -99,17 +131,29 @@
     background: transparent;
     border: none;
     border-radius: 8px;
+    cursor: pointer;
     display: flex;
     flex: 1;
     justify-content: center;
     margin: auto;
     padding: 0 1em;
+    position: relative;
     width: 90%;
     text-align: left;
 
     &:focus, &:hover, &:active {
       background-color: $primary-color;
       color: #fff;
+    }
+
+    &:before {
+      content: "";
+      background: $primary-color;
+      width: 6px;
+      height: 6px;
+      border-radius: 100%;
+      position: absolute;
+      left: 0.25em;
     }
   }
 
@@ -138,4 +182,9 @@
 
 .swiper {
   max-width: 500px;
-} 
+}
+
+.swiper-slide {
+  padding: 0 1em;
+  width: calc(100% - 2em) !important;
+}

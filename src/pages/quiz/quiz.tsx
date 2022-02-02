@@ -1,4 +1,4 @@
-import { FooterComponent, NavigationComponent } from "../../components";
+import { FooterComponent } from "../../components";
 // Core modules imports are same as usual
 import { Pagination } from 'swiper';
 
@@ -17,18 +17,18 @@ import 'swiper/modules/pagination/pagination.scss'; // Pagination module
 import './quiz.scss';
 import { QuizData } from "./quiz-data";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import { BASE_URL } from './../../components/';
 
 export default () => {
-  let [language, setLanguage] = useState<string>('hr');
+  const { t, i18n } = useTranslation();
+  let [language, setLanguage] = useState<string>('en');
   const [swiper, setSwiper] = useState<any>(null);
   const [answers, setAnswers] = useState<number[]>([]);
   const [isEnd, setIsEnd] = useState<boolean>(false);
-  const americanFlag = getUnicodeFlagIcon('US');
-  const croatianFlag = getUnicodeFlagIcon('HR');
   const quizData = QuizData;
 
   useEffect(() => {
-    const answerLength = answers.length;
     setIsEnd(answers.length >= 5 ? true : false);
   }, [answers]);
 
@@ -38,11 +38,10 @@ export default () => {
 
   const changeLanguage = (languageCode: string) => {
     setLanguage(languageCode);
+    i18n.changeLanguage(languageCode);
   }
 
   const selectAnswer = (answer: any) => {
-    console.log('swiper 2: ', swiper);
-    console.log('answer: ', answer);
     setAnswers((arr: any) => [...arr, answer?.value]);
     swiper.slideNext();
   }
@@ -56,10 +55,13 @@ export default () => {
       <section className="quiz">
         <div className="container">
           {/* <NavigationComponent isPrivacyPage={false} /> */}
-          <h2 className="quiz__title">IWI Quiz</h2>
+          <h2 className="quiz__title">
+            <img className="quiz__logo" src={`${BASE_URL}/assets/images/iwi-logo-white.svg`} alt="iwi white logo" />
+            { t('quiz') }
+          </h2>
           <div className="row">
             <div className="col">
-              <h2 className="quiz__subtitle">Language</h2>
+              <h2 className="quiz__subtitle">{ t('language') }</h2>
               <div className="quiz__language-row">
                 <div className="quiz__language-flag" onClick={() => changeLanguage('hr')} dangerouslySetInnerHTML={createMarkup('HR')}></div>
                 <div className="quiz__language-flag" onClick={() => changeLanguage('en')} dangerouslySetInnerHTML={createMarkup('US')}></div>
@@ -95,7 +97,7 @@ export default () => {
           {isEnd && (
             <div className="row quiz__score-row">
               <div className="col">
-                <h2 className="quiz__subtitle">Your score:</h2>
+                <h2 className="quiz__subtitle">{ t('yourScore') }:</h2>
                 <div className="quiz__score">
                   { getTotal() }
                 </div>

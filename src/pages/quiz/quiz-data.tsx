@@ -154,34 +154,34 @@ export const QuizData = Object.freeze([
     answers: [
       {
         id: 'q5a1',
-        enText: 'Say goodbye to the host and go',
+        enText: 'say goodbye to the host and go',
         hrText: 'pozdravim domaćina i gibam',
         value: 2
       },
       {
         id: 'q5a2',
-        enText: 'Say goodbye to the people who you actually spent time with and then go',
+        enText: 'say goodbye to the people who you actually spent time with and then go',
         hrText: 'pozdravim ekipu s kojom sam se družio na partiju i onda idem',
         value: 3
       },
       {
         id: 'q5a3',
-        enText: 'Announce out loud that you\'re leaving and then wave goodbye to whoever is around',
+        enText: 'announce out loud that you\'re leaving and then wave goodbye to whoever is around',
         hrText: 'glasno viknem: „Ekipa, vidimo se!“, tako da svi u blizini čuju',
         value: 4
       },
       {
         id: 'q5a4',
-        enText: 'Leave without saying bye to anyone',
+        enText: 'leave without saying bye to anyone',
         hrText: 'ne volim se pozdravljati ni s kim, samo uzmem stvari i pokupim se',
         value: 1
       },
       {
         id: 'q5a5',
-        enText: 'Say goodbye to everyone there, even if it takes a while',
+        enText: 'say goodbye to everyone there, even if it takes a while',
         hrText: 'ne idem dok se ne pozdravim sa svima, makar mi trebalo malo duže za to',
         value: 5
       },
     ]
   },
-])
+]);
