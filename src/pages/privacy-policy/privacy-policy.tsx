@@ -10,7 +10,7 @@ export default () => {
         <NavigationComponent isPrivacyPage={true} />
         <PrivacyPolicyContentComponent />
       </div>
-      <FooterComponent isPrivacyPage={true} />
+      <FooterComponent />
     </>
   );
 };

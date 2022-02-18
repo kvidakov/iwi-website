@@ -1,160 +1,108 @@
 .social-icons {
-  display: flex;
   align-items: center;
-  margin-left: 4em;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  min-width: 350px;
 
   @media screen and (max-width: 768px) {
-    margin-left: 1em;
+    margin: 1.5em auto 0 auto;
   }
 
-  @media screen and (max-width: 500px) {
-    flex-direction: column;
-    margin: 2em 0 0 0;
+  @media screen and (max-width: 365px) {
+    min-width: 100%;
   }
 
   &__icon {
-    margin-left: 3em;
-
+    height: 45px;
+    width: 45px;
+    
     img {
       max-height: 100%;
       max-width: 100%;
     }
-
-    @media screen and (max-width: 768px) {
-      margin-left: 2em;
+    
+    @media screen and (max-width: 1200px) {
+      height: 40px;
+      width: 40px;
     }
     
+    @media screen and (max-width: 900px) {
+      height: 34px;
+      width: 34px;
+    }
+
+    @media screen and (max-width: 768px) {
+      height: 30px;
+      width: 30px;
+    }
+
     @media screen and (max-width: 600px) {
-      margin-left: 1em;
+      height: 26px;
+      width: 26px;
     }
 
     @media screen and (max-width: 500px) {
       margin: 0 0 1.5em 0;
     }
-  }
-
-  &__icon-facebook {
-    height: 53px;
-    width: 53px;
-
-    @media screen and (max-width: 900px) {
-      height: 40px;
-      width: 40px;
-    }
-
-    @media screen and (max-width: 768px) {
-      height: 34px;
-      width: 34px;
-    }
-
-    @media screen and (max-width: 600px) {
-      height: 28px;
-      width: 28px;
-    }
 
     @media screen and (max-width: 450px) {
-      height: 24px;
-      width: 24px;
-    }
-  }
-
-  &__icon-instagram {
-    height: 47px;
-    width: 47px;
-
-    @media screen and (max-width: 900px) {
-      height: 40px;
-      width: 40px;
+      height: 22px;
+      width: 22px;
     }
 
-    @media screen and (max-width: 768px) {
-      height: 34px;
-      width: 34px;
-    }
+    &.--linkedin {
+      width: 54px;
 
-    @media screen and (max-width: 600px) {
-      height: 28px;
-      width: 28px;
-    }
+      @media screen and (max-width: 1200px) {
+        width: 49px;
+      }
+      
+      @media screen and (max-width: 900px) {
+        width: 43px;
+      }
 
-    @media screen and (max-width: 450px) {
-      height: 24px;
-      width: 24px;
-    }
-  }
+      @media screen and (max-width: 768px) {
+        width: 39px;
+      }
 
-  &__icon-youtube {
-    height: 45px;
-    width: 64px;
+      @media screen and (max-width: 600px) {
+        width: 35px;
+      }
 
-    @media screen and (max-width: 900px) {
-      height: 40px;
-      width: 59px;
-    }
-
-    @media screen and (max-width: 768px) {
-      height: 34px;
-      width: 53px;
-    }
-    
-    @media screen and (max-width: 600px) {
-      height: 28px;
-      width: 45px;
-    }
-
-    @media screen and (max-width: 450px) {
-      height: 24px;
-      width: 39px;
+      @media screen and (max-width: 450px) {
+        width: 31px;
+      }
     }
   }
 }
 
 .navigation {
   .social-icons {
+    min-width: 100px;
+    
+    @media screen and (max-width: 991px) {
+      min-width: 85px;
+    }
 
     @media screen and (max-width: 500px) {
-      flex-direction: row;
-      margin: 0 0 0 4em;
+      min-width: 65px;
     }
 
     &__icon {
-      margin-left: 1em;
-    }
-
-    &__icon-facebook {
       height: 38px;
       width: 38px;
-
+  
       @media screen and (max-width: 900px) {
         height: 34px;
         width: 34px;
       }
-
+  
       @media screen and (max-width: 768px) {
         height: 30px;
         width: 30px;
       }
-
-      @media screen and (max-width: 600px) {
-        height: 24px;
-        width: 24px;
-      }
-    }
-
-    &__icon-instagram {
-      height: 37px;
-      width: 37px;
-
-      @media screen and (max-width: 900px) {
-        height: 34px;
-        width: 34px;
-      }
-
-      @media screen and (max-width: 768px) {
-        height: 30px;
-        width: 30px;
-      }
-
+  
       @media screen and (max-width: 600px) {
         height: 24px;
         width: 24px;

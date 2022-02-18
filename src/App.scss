@@ -36,24 +36,40 @@ a {
 .row {
   display: flex;
   flex: 1;
-  flex-wrap: wrap;
   width: 100%;
+  
+  @media screen and (max-width: 991px) {
+    flex-wrap: wrap;
+  }
 }
 
 .col {
+  box-sizing: border-box;
   display: flex;
   flex: 1;
   flex-direction: column;
+  max-width: 100%;
 
-  @media screen and (max-width: 991px) {
-    padding: 0 2em;
-  }
-
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 1200px) {
     padding: 0 1em;
   }
 }
 
 .col--justify-center {
   justify-content: center;
+}
+
+.app-store-link {
+  &.--ios {
+    display: none;
+  }
+}
+
+.app-store-img {
+  height: 45px;
+  width: 152px;
+
+  &.--ios {
+    margin-right: 30px;
+  }
 }

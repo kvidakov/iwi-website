@@ -106,7 +106,7 @@ export default () => {
           )}
         </div>
       </section>
-      <FooterComponent isPrivacyPage={true} />
+      <FooterComponent />
     </>
   );
 };

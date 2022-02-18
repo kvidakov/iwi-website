@@ -16,7 +16,7 @@ export const NavigationComponent = ({ isPrivacyPage }: any = false) => {
           <span className="navigation__buttons">
             {/* <Link className="navigation__link" href="/sign-in">Sign in</Link>
             <Link className="navigation__link" href="/english">English</Link> */}
-              <SocialMediaIconsComponent />
+              <SocialMediaIconsComponent isInFooter={false}/>
           </span>
         )}
         {isPrivacyPage && (

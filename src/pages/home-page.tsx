@@ -8,8 +8,8 @@ export default () => {
       <IntroComponent></IntroComponent>
       <AboutComponent></AboutComponent>
       <MoreComponent></MoreComponent>
+      <GetIwiComponent></GetIwiComponent>
       <NewsletterComponent></NewsletterComponent>
-      {/* <GetIwiComponent></GetIwiComponent> */}
       <FooterComponent />
     </>
   );

@@ -1,18 +1,27 @@
 .footer {
-  background-color: #C14040;
+  background-color: #31333F;
   display: flex;
   justify-content: center;
   min-height: 300px;
   padding: 10em 0 3em 0;
 
-  &--dark {
-    background-color: #31333F;
-    padding-top: 5em;
+  @media screen and (max-width: 500px) {
+    padding: 6em 0 3em 0;
   }
 
   &__content {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
+    width: 100%;
+    
+    @media screen and (max-width: 1200px) {
+      padding: 0 1em;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
 
     @media screen and (max-width: 500px) {
       align-items: center;
@@ -52,6 +61,10 @@
       font-weight: 600;
     }
 
+    @media screen and (max-width: 1200px) {
+      font-size: 36px;
+    }
+
     @media screen and (max-width: 900px) {
       font-size: 32px;
     }
@@ -76,12 +89,14 @@
 
   &__links {
     display: flex;
-    flex: 1;
     justify-content: flex-start;
-
+    padding-left: 1em;
+    
     @media screen and (max-width: 768px) {
-      justify-content: center;
-      margin-bottom: 1.5em;
+      justify-content: space-evenly;
+      margin: 0 auto 1.5em auto;
+      padding-left: 0;
+      width: 100%;
     }
   }
 
@@ -96,6 +111,7 @@
   &___trademark {
     font-size: 14px;
     margin: 0 0 0 auto;
+    padding-right: 1em;
 
     @media screen and (max-width: 768px) {
       font-size: 12px;

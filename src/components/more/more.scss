@@ -1,5 +1,7 @@
+@import './../../scss/variables';
+
 .more {
-  background-color: #C14040;
+  background-color: $blue-color;
   display: flex;
   justify-content: center;
   padding: 10em 0;
