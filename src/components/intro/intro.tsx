@@ -9,20 +9,18 @@ export const IntroComponent = () => {
       backgroundImage: `url("${BASE_URL}/assets/images/iwi-intro-background-img.jpg")`,
       backgroundPosition: 'center',
       backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat'
+      backgroundRepeat: 'no-repeat',
+      backgroundAttachment: 'fixed'
     }}>
       <div className="container">
         <div className="row">
           <div className="col">
             <img className="intro__logo" src={`${BASE_URL}/assets/images/iwi-logo-white.svg`} alt="iwi white logo" />
             <h1 className="intro__title">Join iwi</h1>
-            <h2 className="intro__subtitle">App that uses <span className="intro__subtitle--highlighted">modern psychology</span> to help you build relationships with people you will easily click with.</h2>
+            <h2 className="intro__subtitle">IWI app uses <span className="intro__subtitle--highlighted">modern psychology</span> to help you build relationships with people you will easily click with.</h2>
             {/* <Button variant="contained" className="intro__button">Join</Button> */}
-            <p className="intro__available-soon">Available on Google Play and soon on App Store</p>
             <div className="intro__app-stores">
-              {/* {false && (
-              )} */}
-              <a href="#" target="_blank" rel="noopener noreferrer" className="app-store-link --ios">
+              <a href="https://apps.apple.com/hr/app/iwi/id1594025785" target="_blank" rel="noopener noreferrer" className="app-store-link --ios">
                 <img src={`${BASE_URL}/assets/images/app-stores/app-store.svg`} alt="iwi app store" className="app-store-img --ios" />
               </a>
               <a href="https://play.google.com/store/apps/details?id=com.iwi" target="_blank" rel="noopener noreferrer" className="app-store-link --android">

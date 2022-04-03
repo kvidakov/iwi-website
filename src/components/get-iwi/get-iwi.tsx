@@ -19,7 +19,7 @@ export const GetIwiComponent = () => {
               <p className="get-iwi__text">Socialize more, match, date, make friends, make connections, build realtionships, <span className="get-iwi__text--highlighted">get from I to We.</span></p>
             </div>
             <div className="get-iwi__app-store-images">
-              <a href="#" target="_blank" rel="noopener noreferrer" className="app-store-link">
+              <a href="https://apps.apple.com/hr/app/iwi/id1594025785" target="_blank" rel="noopener noreferrer" className="app-store-link">
                 <img src={`${BASE_URL}/assets/images/app-stores/app-store.svg`} alt="iwi app store" className="app-store-img --ios" />
               </a>
               <a href="https://play.google.com/store/apps/details?id=com.iwi" target="_blank" rel="noopener noreferrer" className="app-store-link">
