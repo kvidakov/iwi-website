@@ -9,8 +9,7 @@ export const IntroComponent = () => {
       backgroundImage: `url("${BASE_URL}/assets/images/iwi-intro-background-img.jpg")`,
       backgroundPosition: 'center',
       backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      backgroundAttachment: 'fixed'
+      backgroundRepeat: 'no-repeat'
     }}>
       <div className="container">
         <div className="row">
